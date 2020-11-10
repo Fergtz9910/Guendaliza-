@@ -1,0 +1,28 @@
+body{
+    padding-top: 35px;
+}
+
+section {
+    padding-top: 50px;
+}
+nav{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer{
+    height: fit-content;
+    background-color: black;
+}
+.div-footer-principal{
+    padding-top: 50px;
+}
+footer h1{
+    color: white;
+    padding-bottom: 20px;
+}
+footer p,a{
+    color: white;
+}
+
+.bg-gray{
+    background-color: dimgrey;
+}
