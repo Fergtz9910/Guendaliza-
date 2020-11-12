@@ -32,6 +32,8 @@ footer p,a{
 }
 .card-img-top{
     position: relative;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px ;
 }
 #sobrenosotros p{
     padding-top: 30px;
