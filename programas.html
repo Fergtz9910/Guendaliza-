@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guendalizaa</title>
+    <title>Programas Guendalizaa</title>
     <!-- CSS -->
+    <link rel="icon" href="img/logo.png" sizes="16x16">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilodos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -18,9 +19,12 @@
 
 <body>
     <!--Barra de navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#"><img src="img/logo.png"> Guendalizaa</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html#SobreNosotros">Sobre nosotros </a>
@@ -44,10 +48,6 @@
                     <a class="nav-link" href="index.html#contribuciones">Contribucion</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
     <!-- Fin barra de navegación-->
@@ -57,10 +57,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                <div class="card embed-responsive embed-responsive-1by1" >
-                    <iframe class=" embed-responsive-item" src="imgprog/Panycafe.mp4" width="300" height="300" atl=""> </iframe>
-                     </div>
+                    <div class="card embed-responsive embed-responsive-1by1">
+                        <iframe class=" embed-responsive-item" src="imgprog/Panycafe.mp4" width="300" height="300" atl=""> </iframe>
                     </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="about-text wow fadeInUp">
                         <h4 class="display-4">Campaña Primeros Auxilios Emocionales </h4>
@@ -68,15 +68,15 @@
                             que lo necesiten, derivado de algún trastorno psicológico como: depresión, ansiedad, tristeza. Que se agudizara o se detonara a partir del confinamiento por la pandemóa del SARS-coV2.
                             <p class="text-justify"> Se han atendido a más de 30 personas con sus respectivos seguimientos de consulta. Es una campaña gratuita y totalmente confidencial. Agradecemos a los profesores José Balderas, Beatriz Torres y a los 26 alumnos y alumnas por
                                 está alianza y su disponibilidad a favor de la ciudadanía </p>
-                        </div>
-                    </div> 
-                    <!--IMAGEN SALUD EMOCIONAL 
+                    </div>
+                </div>
+                <!--IMAGEN SALUD EMOCIONAL 
                      <div class="col-lg-4">
                         <div class="about-pic wow fadeInUp">
                             <img src="imgprog/campañaemo.jpeg" wight="300" height="300" alt="Campaña emocional Guendalizaa">
                         </div>  -->
-                </div>
             </div>
+        </div>
     </section>
     <!--Fin programa salud emocional-->
 
@@ -125,20 +125,20 @@
                 </div>
                 <div class="card">
                     <img src="imgprog/img9.jpeg" wight="300" height="300" alt="#PanYCafe Guendalizaa">
-                </div> 
+                </div>
             </div>
 
             <div class="owl-carousel">
-                <div class="card embed-responsive embed-responsive-1by1"> 
+                <div class="card embed-responsive embed-responsive-1by1">
                     <iframe class="embed-responsive-item" src="imgprog/hosp1.mp4" width="300" height="300" alt="Panycafe"></iframe>
                 </div>
-                <div class="card embed-responsive embed-responsive-1by1"> 
+                <div class="card embed-responsive embed-responsive-1by1">
                     <iframe class="embed-responsive-item" src="imgprog/hosp2.mp4" width="300" height="300" alt="Panycafe"></iframe>
                 </div>
-                <div class="card embed-responsive embed-responsive-1by1"> 
+                <div class="card embed-responsive embed-responsive-1by1">
                     <iframe class="embed-responsive-item" src="imgprog/hosp3.mp4" width="300" height="300" alt="Panycafe"></iframe>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
     <!--Fin Segunda sección-->
@@ -190,7 +190,7 @@
             <div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                             <div class="">
                                 <h1><i class="fa fa-info-circle"></i> Mas informacion</h1>
                                 <p>Fundacion Guendalizaa enfocada en ayudar a comunidad, grupos y personas en vulnerabilidad.</p>
@@ -210,12 +210,11 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                             <div>
                                 <h1><i class="fa fa-address-card"></i> Contactos</h1>
-                                <p><i class="fa fa-globe"></i> Ubicacion</p>
                                 <p><i class="fa fa-phone"></i> 55 1667 0105</p>
-                                <p><i class="fa fa-envelope"></i> Correo</p>
+                                <p><i class="fa fa-envelope"></i> fundacionguendalizaa@gmail.com</p>
                                 <div>
                                 </div>
                             </div>
@@ -238,6 +237,29 @@
     <script src="js/owl.carousel.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $(".owl-carousel ").owlCarousel({
+            autoplay: false,
+            loop: true,
+
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
     </script>
     <script>
         $(".owl-carousel").owlCarousel();

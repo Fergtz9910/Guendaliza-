@@ -1,6 +1,6 @@
 <?php 
 
-$para ='correo@gmail.com';
+$para ='fundacionguendalizaa@gmail.com';
 $asunto = "Guendaliza";
 
 $nombre = $_POST['nombre'];
@@ -12,6 +12,5 @@ $numero = $_POST['numero'];
 $mensaje ="Hola mi nombre es ".$nombre." ".$apellidos." mi correo es ".$email." y mi numero telefonico es ".$numero. " me gustaria contribuir a la fundacion";
 
 echo $mensaje;
-//$enviarMail = mail ($para, $asunto, $mensaje);
-
+$enviarMail = mail ($para, $asunto, $mensaje);
 ?>
