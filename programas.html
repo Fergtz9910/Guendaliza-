@@ -58,7 +58,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="card embed-responsive embed-responsive-1by1">
-                        <iframe class=" embed-responsive-item" src="imgprog/Panycafe.mp4" width="300" height="300" atl=""> </iframe>
+                        <video class="embed-responsive-item" controls muted> 
+                    <source src="imgprog/Panycafe.mp4" width="300" height="300" atl=""/>
+                    </video>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -70,11 +72,6 @@
                                 está alianza y su disponibilidad a favor de la ciudadanía </p>
                     </div>
                 </div>
-                <!--IMAGEN SALUD EMOCIONAL 
-                     <div class="col-lg-4">
-                        <div class="about-pic wow fadeInUp">
-                            <img src="imgprog/campañaemo.jpeg" wight="300" height="300" alt="Campaña emocional Guendalizaa">
-                        </div>  -->
             </div>
         </div>
     </section>
@@ -130,13 +127,21 @@
 
             <div class="owl-carousel">
                 <div class="card embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="imgprog/hosp1.mp4" width="300" height="300" alt="Panycafe"></iframe>
+                    <video class="embed-responsive-item" controls muted> 
+                       <source  src="imgprog/hosp1.mp4" width="300" height="300" alt="Panycafe" /> 
+                    </video>
                 </div>
+
                 <div class="card embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="imgprog/hosp2.mp4" width="300" height="300" alt="Panycafe"></iframe>
+                    <video class="embed-responsive-item" controls muted>
+                     <source src="imgprog/hosp2.mp4" width="300" height="300" alt="Panycafe"/>
+                </video>
                 </div>
+
                 <div class="card embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="imgprog/hosp3.mp4" width="300" height="300" alt="Panycafe"></iframe>
+                    <video class="embed-responsive-item" controls muted> 
+                    <source src="imgprog/hosp3.mp4" width="300" height="300" alt="Panycafe"/>
+                </video>
                 </div>
             </div>
         </div>
@@ -145,7 +150,7 @@
 
     <section id="MexicanosAyudandoaMexicanos" class="about-section spad">
         <div class="container">
-            <h4 class=" display-4 card-subtitle text-center wow fadeInUp">#MexicanosAyudandoaMexicanos</h4>
+            <h4 class="display-4 text-center wow fadeInUp"> Mexicanos Ayudando a Mexicanos </h4>
             <p class="text-justify wow fadeInUp"> Empezamos dondando 150 pares de zapatos y tennis nuevos a los niños y niñas de la alcaldía Miguel Hidalgo </p>
             <div class="card-deck wow fadeInUp">
                 <div class="card">
@@ -163,7 +168,7 @@
     <!--tercer campaña -->
     <section id="ONUMUJERES" class="about-section-spad">
         <div class="container">
-            <h4 class="display-4 card-subtitle text-center wow fadeInUp"> Iniciativa personal y emprender para avanzar </h4>
+            <h4 class="display-4 text-center wow fadeInUp"> Iniciativa personal y emprender para avanzar </h4>
             <p class="text-justify wow fadeInUp"> Este curso fue una alianza que Guendalizaá tuvo con Coparmex Mujeres CDMX y ONU Mujeres. Teniendo dos cursos de 3 meses y 70 mujeres capacitadas </p>
             <div class="card-deck wow fadeInUp">
                 <div class="owl-carousel">
@@ -239,15 +244,14 @@
         new WOW().init();
     </script>
     <script>
-        $(".owl-carousel ").owlCarousel({
+        $(".owl-carousel").owlCarousel({
             autoplay: false,
             loop: true,
-
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
-                    nav: true
+                    nav: false
                 },
                 600: {
                     items: 2,
@@ -255,14 +259,11 @@
                 },
                 1000: {
                     items: 3,
-                    nav: true,
+                    nav: false,
                     loop: true
                 }
             }
         });
-    </script>
-    <script>
-        $(".owl-carousel").owlCarousel();
     </script>
 </body>
 

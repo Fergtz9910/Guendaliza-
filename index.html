@@ -197,8 +197,8 @@
     <section id="contribuciones">
         <h1 class="wow fadeInUp">Contribuye a la causa</h1>
         <div class="container ">
-            <div class="row ">
-                <div class="col-lg-6 padding wow fadeInUp">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 padding wow fadeInUp">
                     <form  method="POST" id="formulario" class="form">
                         <div class="form-group ">
                             <input type="text" class="form-control " name="nombre" placeholder="Nombre " required>
@@ -215,11 +215,11 @@
                         <button class="btn btn-primary " id="boton1">Enviar</button>
                     </form>
                 </div>
-                <div class="col-lg-6 embed-responsive embed-responsive-1by1 wow fadeInUp">
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F110342530370325%2Fvideos%2F635054380466108%2F&show_text=false&width=560 " width="560px" height="300px" style="border:none;overflow:hidden
-                        " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share " allowFullScreen="true "></iframe>
+                <div class="col-lg-6 col-sm-12  embed-responsive  embed-responsive-16by9 wow fadeInUp">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F110342530370325%2Fvideos%2F635054380466108%2F&show_text=false&width=560 "  ></iframe>
                 </div>
             </div>
+            <div></div>
         </div>
     </section>
     <!--fin pago-->
@@ -297,12 +297,11 @@
         $(".owl-carousel ").owlCarousel({
             autoplay: true,
             loop: true,
-
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
-                    nav: true
+                    nav: false
                 },
                 600: {
                     items: 2,
@@ -310,7 +309,7 @@
                 },
                 1000: {
                     items: 3,
-                    nav: true,
+                    nav: false,
                     loop: true
                 }
             }

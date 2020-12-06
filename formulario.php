@@ -1,7 +1,7 @@
 <?php 
 
 $para ='fundacionguendalizaa@gmail.com';
-$asunto = "Guendaliza";
+$asunto = "Contribuir";
 
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
