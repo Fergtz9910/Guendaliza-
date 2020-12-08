@@ -15,12 +15,16 @@
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#"><img src="img/logo.png"> Guendalizaa</a>
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#SobreNosotros">Sobre nosotros </a>
@@ -43,10 +47,6 @@
                     <a class="nav-link" href="#contribuciones">Contribucion</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
     <!--Carrusel -->
@@ -85,7 +85,7 @@
             <p class="text-center wow fadeInUp">La fundación Guendaliza á A.C, se formo el 6 de Marzo de 2017, somos donataria autorizada a partir de Marzo 2020, los Asociados fundadores e integrantes de la mesa directiva son:</p>
             <div class=" wow fadeInUp">
                 <div class="owl-carousel">
-                    <div class="card">
+                    <div class="card ">
                         <img class="card-img-top " src="img/Afundadora.jpeg " alt="Fundadora Guendalizaa ">
                         <div class="card-body text-center ">
                             <h5 class="card-title ">Asoc. Fundadora Blanca González</h5>
@@ -112,7 +112,7 @@
                     <div class="card ">
                         <img class="card-img-top " src="img/Afundador.jpeg " alt="Fundador Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Asoc. Fundador Mario R. Villanueva</h5>
+                            <h5 class="card-title ">Asoc. Fundador Mario Villanueva</h5>
                         </div>
                     </div>
                 </div>
@@ -134,31 +134,31 @@
                     <div class="card ">
                         <img class="card-img-top " src="img/DirectoraDesarollo.jpg " alt="Vicepresidente Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Directora de Desarrollo Institucional: Lic. Carolina Govela</h5>
+                            <h5 class="card-title ">Directora Desarrollo Institucional: Lic. Carolina Govela</h5>
                         </div>
                     </div>
                     <div class="card ">
                         <img class="card-img-top " src="img/DirectoraComunicacion.jpg " alt="Presidenta Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Directora de Comunicación: Lic. Socorro Franco Vertti.</h5>
+                            <h5 class="card-title ">Directora Comunicaciónes: Lic. Socorro Franco Vertti.</h5>
                         </div>
                     </div>
                     <div class="card ">
                         <img class="card-img-top " src="img/DirectorEnlace.jpg " alt="Tesorero Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Director de Enlace con Organizaciones: Alfonso Govela</h5>
+                            <h5 class="card-title ">Director Enlaces con Organizaciones: Alfonso Govela</h5>
                         </div>
                     </div>
                     <div class="card ">
                         <img class="card-img-top " src="img/DirectoraEnlace.jpg " alt="Fundador Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Directora de Enlace Académico: Lic. Ana Luisa Diaz Cardona</h5>
+                            <h5 class="card-title ">Directora Enlace Académico: Lic. Ana Luisa Cardona Diaz</h5>
                         </div>
                     </div>
                     <div class="card ">
                         <img class="card-img-top " src="img/DirectoraVoluntariado.jpg " alt="Fundador Guendalizaa ">
                         <div class="card-body text-center ">
-                            <h5 class="card-title ">Directora de Voluntariado: Dra. Carolina Maulen</h5>
+                            <h5 class="card-title ">Directora Voluntariado: Dra. Carolina Maulen</h5>
                         </div>
                     </div>
                 </div>
@@ -197,29 +197,29 @@
     <section id="contribuciones">
         <h1 class="wow fadeInUp">Contribuye a la causa</h1>
         <div class="container ">
-            <div class="row ">
-                <div class="col-lg-6 padding wow fadeInUp">
-                    <form action="formulario.php " method="POST " class="form ">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 padding wow fadeInUp">
+                    <form  method="POST" id="formulario" class="form">
                         <div class="form-group ">
-                            <input type="text " class="form-control " name="nombre " placeholder="Nombre " required>
+                            <input type="text" class="form-control " name="nombre" placeholder="Nombre " required>
                         </div>
                         <div class="form-group ">
-                            <input type="text " class="form-control " name="apellidos " placeholder="Apellidos " required>
+                            <input type="text" class="form-control " name="apellidos" placeholder="Apellidos " required>
                         </div>
                         <div class="form-group ">
-                            <input type="email" class="form-control " name="email " placeholder="Correo electronico " required>
+                            <input type="email" class="form-control " name="email" placeholder="Correo electronico " required>
                         </div>
                         <div class="form-group ">
-                            <input type="text " class="form-control " name="numero " placeholder="Numero telefonico " required>
+                            <input type="text" class="form-control " name="numero" placeholder="Numero telefonico " required>
                         </div>
-                        <button class="btn btn-primary " type="submit ">Enviar</button>
+                        <button class="btn btn-primary " id="boton1">Enviar</button>
                     </form>
                 </div>
-                <div class="col-lg-6 wow fadeInUp">
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F110342530370325%2Fvideos%2F635054380466108%2F&show_text=false&width=560 " width="560px" height="300px" style="border:none;overflow:hidden
-                        " scrolling="no " frameborder="0 " allowfullscreen="true " allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share " allowFullScreen="true "></iframe>
+                <div class="col-lg-6 col-sm-12  embed-responsive  embed-responsive-16by9 wow fadeInUp">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F110342530370325%2Fvideos%2F635054380466108%2F&show_text=false&width=560 "  ></iframe>
                 </div>
             </div>
+            <div></div>
         </div>
     </section>
     <!--fin pago-->
@@ -229,7 +229,7 @@
             <div>
                 <div class="container ">
                     <div class="row ">
-                        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 ">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
                             <div class=" ">
                                 <h1><i class="fa fa-info-circle "></i> Mas informacion</h1>
                                 <p>Fundacion Guendalizaa enfocada en ayudar a comunidad, grupos y personas en vulnerabilidad.</p>
@@ -249,12 +249,11 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 ">
                             <div>
                                 <h1><i class="fa fa-address-card "></i> Contactos</h1>
-                                <p><i class="fa fa-globe "></i> Ubicacion</p>
                                 <p><i class="fa fa-phone "></i> 55 1667 0105</p>
-                                <p><i class="fa fa-envelope "></i> Correo</p>
+                                <p><i class="fa fa-envelope "></i> fundacionguendalizaa@gmail.com</p>
                                 <div>
                                 </div>
                             </div>
@@ -272,9 +271,25 @@
         </footer>
     </section>
     <!--Fin footer-->
-    <script src="js/wow.min.js "></script>
-    <script src="js/owl.carousel.min.js "></script>
-    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    
+    <script>
+        $('#boton1').click(function() {
+            $.ajax({
+                url: 'formulario.php',
+                type: 'POST',
+                data: $('#formulario').serialize(),
+                success: function(res){
+                    alert("gracias nos comunicaremos a la brevedad")
+                }
+            });
+            $('input[type="text"]').val('');
+            $('input[type="email"]').val('');
+            return false;
+        });
+    </script>
     <script>
         new WOW().init();
     </script>
@@ -282,12 +297,11 @@
         $(".owl-carousel ").owlCarousel({
             autoplay: true,
             loop: true,
-
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
-                    nav: true
+                    nav: false
                 },
                 600: {
                     items: 2,
@@ -295,7 +309,7 @@
                 },
                 1000: {
                     items: 3,
-                    nav: true,
+                    nav: false,
                     loop: true
                 }
             }
