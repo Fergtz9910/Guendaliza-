@@ -1,7 +1,3 @@
-body{
-    padding-top: 35px;
-}
-
 section {
     padding-top: 50px;
 }
@@ -35,4 +31,13 @@ footer p,a{
 .card {
     margin-left: 15px;
     margin-right: 15px;
+}
+.jumbotron{
+    background-image:url('../imgprog/portada.png');
+    height: 110vh;
+    background-size:cover;
+}
+.pull-left{
+    padding-left: 10px;
+    padding-top: 10px;
 }
