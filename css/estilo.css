@@ -89,3 +89,33 @@
         .card:not(:last-child) {
             margin-right: 15px;
         }
+
+        .jumbotron{
+            background-image:url('../imgprog/portada.png');
+            height: 110vh;
+            background-size:cover;
+        }
+        #contribuciones h4{
+            padding-top: 30px;
+        }
+       #money{
+        background: rgb(0,212,255);
+        background: linear-gradient(90deg, rgba(0,212,255,1) 27%, rgba(167,47,222,1) 72%);
+       }
+       #money input{
+           border-color: red;
+           border-width: 10px;
+       }
+
+       #money h1,p{
+           padding-bottom: 10px;
+           color: white;
+       }
+       #money div{
+           padding-left: 80px;
+           padding-right: 80px;
+       }
+       .pull-left{
+           padding-left: 10px;
+           padding-top: 10px;
+       }
