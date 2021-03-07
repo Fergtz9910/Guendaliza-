@@ -107,11 +107,15 @@
            border-width: 10px;
        }
 
-       #money h1,p{
-           padding-bottom: 10px;
-           color: white;
+       .h1money{
+        padding-bottom: 10px;
+        color: white;
        }
-       #money div{
+       .pmoney{
+        padding-bottom: 10px;
+        color: white;
+       }
+        .divmoney{
            padding-left: 80px;
            padding-right: 80px;
        }
